@@ -109,7 +109,7 @@ class _RewardsTabState extends State<RewardsTab> {
                             const Icon(Icons.credit_card_rounded, color: AppTheme.primary, size: 20),
                             const SizedBox(width: 6),
                             Text(
-                              'MELBET CLUB • GOLD',
+                              'МЕЛ КЛУБ • GOLD',
                               style: GoogleFonts.outfit(
                                 fontSize: 11,
                                 fontWeight: FontWeight.bold,

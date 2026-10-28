@@ -77,7 +77,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'МЕЛБЕТ ХАБ',
+                    'МЕЛ ХАБ',
                     style: GoogleFonts.outfit(
                       fontSize: 16,
                       fontWeight: FontWeight.w900,
@@ -136,7 +136,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           // Coins chip
           FittedBox(
             fit: BoxFit.scaleDown,
-            child: Container(
+            child: InkWell(
+              onTap: () => setState(() => _currentIndex = 2),
+              borderRadius: BorderRadius.circular(10),
+              child: Container(
               margin: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
               decoration: BoxDecoration(
@@ -163,6 +166,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 ],
               ),
             ),
+          ),
           ),
           const SizedBox(width: 8),
         ],
